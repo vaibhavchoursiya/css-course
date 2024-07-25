@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#pageloader {
+  width: 150px;
+  height: 150px;
+}
+
+#pageloader circle {
+  fill: none;
+  stroke-width: 10;
+  stroke-linecap: round;
+  transform-origin: center;
+  animation-name: spinner;
+  animation-duration: 2s;
+  /* animation-timing-function: ease-in-out; */
+  /* animation-fill-mode: forwards; */
+  animation-iteration-count: infinite;
+}
+
+#pageloader circle:nth-child(1) {
+  stroke: #ffc114;
+  stroke-dasharray: 50;
+  animation-delay: -1s;
+}
+
+#pageloader circle:nth-child(2) {
+  stroke: #ff5248;
+  stroke-dasharray: 100;
+  animation-delay: -2s;
+}
+
+#pageloader circle:nth-child(3) {
+  stroke: #1437ff;
+  stroke-dasharray: 180;
+  animation-delay: -3s;
+}
+
+#pageloader circle:nth-child(4) {
+  stroke: #ff1414;
+  stroke-dasharray: 250;
+  stroke-dashoffset: -100;
+  /* animation-delay: -4s; */
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(720deg);
+  }
+  /* 100% {
+
+  } */
+}

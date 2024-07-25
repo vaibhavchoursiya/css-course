@@ -1,0 +1,47 @@
+/* 
+    Typography Properties is inherted.
+*/
+
+html {
+  font-size: 16px;
+}
+
+/* * selected every things */
+/* 
+
+* {
+  font-family: monospace;
+} 
+
+*/
+
+/* Element Selector */
+body {
+}
+
+main {
+  font-family: monospace;
+}
+h1,
+h2 {
+  color: blue;
+}
+
+/* Class Selector */
+.gray {
+  color: gray;
+}
+
+p {
+  color: purple;
+}
+
+.highlight {
+  text-transform: uppercase;
+  background: gold;
+}
+
+/* Id Selector */
+#second {
+  font-style: italic;
+}
